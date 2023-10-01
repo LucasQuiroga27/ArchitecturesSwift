@@ -18,6 +18,7 @@
 		049523102AC9296900F5727E /* ListOfMoviesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495230F2AC9296900F5727E /* ListOfMoviesRouter.swift */; };
 		049523142AC92F2300F5727E /* PopularMovieEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049523132AC92F2300F5727E /* PopularMovieEntity.swift */; };
 		049523162AC9314100F5727E /* PopularMovieResponseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049523152AC9314100F5727E /* PopularMovieResponseEntity.swift */; };
+		04D18A7F2ACA2E6F007514DF /* MovieCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D18A7E2ACA2E6F007514DF /* MovieCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		0495230F2AC9296900F5727E /* ListOfMoviesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfMoviesRouter.swift; sourceTree = "<group>"; };
 		049523132AC92F2300F5727E /* PopularMovieEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMovieEntity.swift; sourceTree = "<group>"; };
 		049523152AC9314100F5727E /* PopularMovieResponseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMovieResponseEntity.swift; sourceTree = "<group>"; };
+		04D18A7E2ACA2E6F007514DF /* MovieCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +71,6 @@
 				049523082AC928E900F5727E /* ListOfMovies */,
 				049522F42AC923A400F5727E /* AppDelegate.swift */,
 				049522F62AC923A400F5727E /* SceneDelegate.swift */,
-				049522F82AC923A400F5727E /* ViewController.swift */,
 				049522FD2AC923A600F5727E /* Assets.xcassets */,
 				049522FF2AC923A600F5727E /* LaunchScreen.storyboard */,
 				049523022AC923A600F5727E /* Info.plist */,
@@ -80,11 +81,11 @@
 		049523082AC928E900F5727E /* ListOfMovies */ = {
 			isa = PBXGroup;
 			children = (
+				04D18A7C2ACA2882007514DF /* View */,
+				04D18A7B2ACA286C007514DF /* Interactor */,
+				04D18A7A2ACA285C007514DF /* Presenter */,
 				049523122AC929A100F5727E /* Entities */,
-				049523092AC9291800F5727E /* ListOfMoviesView.swift */,
-				0495230B2AC9293600F5727E /* ListOfMoviesPresenter.swift */,
-				0495230D2AC9295100F5727E /* ListOfMoviesInteractor.swift */,
-				0495230F2AC9296900F5727E /* ListOfMoviesRouter.swift */,
+				04D18A7D2ACA2892007514DF /* Router */,
 			);
 			path = ListOfMovies;
 			sourceTree = "<group>";
@@ -96,6 +97,40 @@
 				049523152AC9314100F5727E /* PopularMovieResponseEntity.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		04D18A7A2ACA285C007514DF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0495230B2AC9293600F5727E /* ListOfMoviesPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		04D18A7B2ACA286C007514DF /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				0495230D2AC9295100F5727E /* ListOfMoviesInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		04D18A7C2ACA2882007514DF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				049522F82AC923A400F5727E /* ViewController.swift */,
+				049523092AC9291800F5727E /* ListOfMoviesView.swift */,
+				04D18A7E2ACA2E6F007514DF /* MovieCellView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04D18A7D2ACA2892007514DF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0495230F2AC9296900F5727E /* ListOfMoviesRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +206,7 @@
 				0495230A2AC9291800F5727E /* ListOfMoviesView.swift in Sources */,
 				049522F92AC923A400F5727E /* ViewController.swift in Sources */,
 				0495230E2AC9295100F5727E /* ListOfMoviesInteractor.swift in Sources */,
+				04D18A7F2ACA2E6F007514DF /* MovieCellView.swift in Sources */,
 				049523142AC92F2300F5727E /* PopularMovieEntity.swift in Sources */,
 				0495230C2AC9293600F5727E /* ListOfMoviesPresenter.swift in Sources */,
 				049523102AC9296900F5727E /* ListOfMoviesRouter.swift in Sources */,
