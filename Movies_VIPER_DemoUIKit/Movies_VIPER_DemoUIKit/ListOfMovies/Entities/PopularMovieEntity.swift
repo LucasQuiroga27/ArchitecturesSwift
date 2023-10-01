@@ -16,9 +16,10 @@ struct PopularMovieEntity: Decodable {
     var votes: Double
     
     enum CodingKeys: String, CodingKey {
-        case id, title, overview, lenguage
+        case id, title, overview
+        case lenguage = "original_language"
         case imageURL = "poster_path"
-        case votes
+        case votes = "vote_average"
     }
     
 }
