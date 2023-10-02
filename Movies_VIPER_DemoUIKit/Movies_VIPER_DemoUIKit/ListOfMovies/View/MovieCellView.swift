@@ -34,7 +34,7 @@ class MovieCellView: UITableViewCell {
         label.font = .systemFont(ofSize: 10,
                                  weight: .regular,
                                  width: .standard)
-        label.textColor = .systemGray2
+        //label.textColor = .systemGray2
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -73,7 +73,7 @@ class MovieCellView: UITableViewCell {
     }
     
     func configure(model: PopularMovieEntity){
-        movieImageView.kf.setImage(with: URL(string: "https://image.tmdb.org/t/p/w200" + model.imageURL))
+        movieImageView.kf.setImage(with: URL(string: "https://image.tmdb.org/t/p/w400" + model.imageURL))
         movieName.text = model.title
         movieDescription.text = model.overview
     }

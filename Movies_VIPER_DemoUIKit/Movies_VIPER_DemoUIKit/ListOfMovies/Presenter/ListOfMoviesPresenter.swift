@@ -17,14 +17,16 @@ class ListOfMoviesPresenter {
     
     private let listOfMoviesInteractor: ListOfMoviesInteractor
     
+    var models: [PopularMovieEntity] = []
+    
     init(listOfMoviesInteractor: ListOfMoviesInteractor) {
         self.listOfMoviesInteractor = listOfMoviesInteractor
     }
     
     func onViewAppear(){
         Task {
-            let models = await listOfMoviesInteractor.getMovies()
-            ui?.update(movies: models.results)
+            models = await listOfMoviesInteractor.getMovies().results
+            ui?.update(movies: models)
         }
     }
 }
